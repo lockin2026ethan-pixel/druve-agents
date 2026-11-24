@@ -16,3 +16,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | crypto-news-sentiment | Don Jayamaha Jr. | [crypto-news-sentiment/index.mjs](crypto-news-sentiment/index.mjs) |
 | olostep-amazon-scraper | Yasser Sami | [olostep-amazon-scraper/index.mjs](olostep-amazon-scraper/index.mjs) |
 | ai-virtual-receptionist | Risper Bevalyn | [ai-virtual-receptionist/index.mjs](ai-virtual-receptionist/index.mjs) |
+| google-ads-performance-analyst | Nikan Noorafkan | [google-ads-performance-analyst/index.mjs](google-ads-performance-analyst/index.mjs) |
