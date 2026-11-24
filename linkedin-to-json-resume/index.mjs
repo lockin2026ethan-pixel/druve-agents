@@ -32,7 +32,6 @@
 
 import { getModelClient } from '@druve/cli/providers';
 
-const MAX_CHARS = 60000;
 
 // Author's prompts, verbatim from the template.
 const MD_SYSTEM = "You are a markdown expert";
@@ -98,7 +97,7 @@ export async function handleMessage(input, providerConfig) {
   const model = getModelClient(providerConfig);
 
   // Step 1: Markdown to Textual Data Extractor.
-  const text = String(await model.complete(`${MD_SYSTEM}\n\n${sub(MD_TEXT, '{{ $json.data }}', raw.slice(0, MAX_CHARS))}`)).trim();
+  const text = String(await model.complete(`${MD_SYSTEM}\n\n${sub(MD_TEXT, '{{ $json.data }}', raw)}`)).trim();
 
   // Steps 2 and 3 in parallel, as in the template.
   const [skills, resume] = await Promise.all([
