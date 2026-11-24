@@ -1,7 +1,7 @@
 // LinkedIn Profile to JSON Resume: a Druve agent ported by hand from the n8n
 // template "LinkedIn Profile Extract and Build JSON Resume with Bright Data &
-// Google Gemini" by Ranjan Dailata (https://n8n.io/workflows/4653). Draft for
-// Ranjan to check. Nothing is published.
+// Google Gemini" by Ranjan Dailata (https://n8n.io/workflows/4653). Listed on Druve
+// with the author's permission; all credit for the workflow and prompts to Ranjan.
 //
 // What it keeps, unchanged: the three AI steps and their prompts.
 //   1. "Markdown to Textual Data Extractor" (system: "You are a markdown expert").
