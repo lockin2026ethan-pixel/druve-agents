@@ -18,3 +18,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | ai-virtual-receptionist | Risper Bevalyn | [ai-virtual-receptionist/index.mjs](ai-virtual-receptionist/index.mjs) |
 | google-ads-performance-analyst | Nikan Noorafkan | [google-ads-performance-analyst/index.mjs](google-ads-performance-analyst/index.mjs) |
 | vapi-sheet-outbound-caller | Marcus Taylor | [vapi-sheet-outbound-caller/index.mjs](vapi-sheet-outbound-caller/index.mjs) |
+| dental-denial-appeal-drafter | Swapnil Mandloi | [dental-denial-appeal-drafter/index.mjs](dental-denial-appeal-drafter/index.mjs) |
