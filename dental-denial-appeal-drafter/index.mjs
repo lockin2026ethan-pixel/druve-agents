@@ -1,7 +1,7 @@
 // Dental Denial Appeal Drafter: a Druve agent ported by hand from the n8n
 // template "Draft dental denial appeal packets from Gmail EOBs with OpenAI and
-// Google Drive" by Swapnil Mandloi (https://n8n.io/workflows/19460).
-// Draft for Swapnil to check. Listed on Druve only by Swapnil, under his own name.
+// Google Drive" by Swapnil Mandloi, Swapnil AI Labs (https://n8n.io/workflows/19460).
+// Draft for Swapnil AI Labs to check. Listed on Druve only by Swapnil AI Labs, under its own name.
 //
 // What it keeps, unchanged: the "Normalize Denial Payload" defaults, the
 // "Extract Denial Line Items" system prompt and JSON schema word for word, the

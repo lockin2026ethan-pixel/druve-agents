@@ -7,7 +7,7 @@
 // senders), one summary per email with the "Import body emails" prompt word
 // for word, the "Code in JavaScript" merge word for word (joined by ---, cut
 // at 1800 characters on the last full stop, with the author's truncation
-// note), the "Final Summary" editor-in-chief prompt word for word, the
+// note, in English), the "Final Summary" editor-in-chief prompt word for word, the
 // optional "Mark as read", the Notion text block, and the audio settings of
 // the "Generate audio" node (OpenAI tts-1-hd, voice nova).
 // What changes: no n8n credentials, no weekly trigger and no Google Drive.
@@ -21,8 +21,11 @@
 //   {"gmail_access_token": "...", "senders": ["news@example.ai", "digest@example.com"],
 //    "days": 7, "max_emails": 20, "mark_read": false}
 //   or "query": "any Gmail search" instead of senders/days.
-// Optional: "audio": true (uses the buyer's OpenAI key, "openai_api_key" or the
-//           provider key), "notion_token": "...", "notion_page": "https://www.notion.so/...".
+// Optional: "audio": true together with "openai_api_key": "sk-..." (the buyer must
+//           pass this key in the input; the model-provider key is not reused for audio),
+//           "notion_token": "...", "notion_page": "https://www.notion.so/...".
+// Today's date is passed into both prompts, so "the Monday of the week" is computed
+// from the real date rather than guessed.
 // Plain text input is treated as one pasted email.
 //
 // Data-fetch hosts to declare when publishing:
@@ -34,8 +37,10 @@
 
 import { getModelClient } from '@druve/cli/providers';
 
-// "Import body emails", verbatim (the email text goes where n8n put {{ $json.text }}).
-const importPrompt = (text) => `Act as a personal editor. Analyze the text of the provided emails (${text}) and create a concise summary of the key news or information.
+// "Import body emails", verbatim apart from today's date added on top (the email text goes where n8n put {{ $json.text }}).
+const importPrompt = (text, today) => `Today's date is ${today}.
+
+Act as a personal editor. Analyze the text of the provided emails (${text}) and create a concise summary of the key news or information.
 
 Formatting rules for Notion:
 
@@ -53,8 +58,10 @@ At the beginning of the summary, include (only once) the date (the Monday of the
 
 Exclude events from the summary.`;
 
-// "Final Summary", verbatim.
-const finalPrompt = (finalSummary) => `You are the editor-in-chief of a weekly newsletter.
+// "Final Summary", verbatim apart from today's date added on top.
+const finalPrompt = (finalSummary, today) => `Today's date is ${today}.
+
+You are the editor-in-chief of a weekly newsletter.
 Below you will find a series of raw summaries from various emails received this week.
 Your task is to create a SINGLE final narrative text (Weekly Recap) that merges the most important news.
 
@@ -83,7 +90,7 @@ function mergeSummaries(outputs) {
     if (lastDotIndex > 0) {
       trimmed = trimmed.substring(0, lastDotIndex + 1);
     }
-    mergedText = trimmed + '\n\n(Testo troncato per limiti di lunghezza...)';
+    mergedText = trimmed + '\n\n(Text truncated due to length limits...)';
   }
   return { final_summary: mergedText };
 }
@@ -184,19 +191,20 @@ export async function handleMessage(input, providerConfig) {
   if (!texts.length) return JSON.stringify({ query, emails_found: 0, note: 'No emails matched, so there is nothing to recap.' });
 
   const model = getModelClient(providerConfig);
+  const today = new Date().toISOString().slice(0, 10);
   const outputs = [];
   for (const text of texts) {
-    outputs.push(String(await model.complete(importPrompt(text))).trim());
+    outputs.push(String(await model.complete(importPrompt(text, today))).trim());
   }
   const { final_summary } = mergeSummaries(outputs);
-  const recap = String(await model.complete(finalPrompt(final_summary))).trim();
+  const recap = String(await model.complete(finalPrompt(final_summary, today))).trim();
 
   const out = { query, emails_found: texts.length, email_summaries: outputs, recap };
 
   if (p.audio) {
-    const key = p.openai_api_key || providerConfig?.openaiApiKey || providerConfig?.apiKey;
+    const key = p.openai_api_key;
     try {
-      if (!key) throw new Error('Audio needs an OpenAI key: pass "openai_api_key".');
+      if (!key) throw new Error('Audio needs an OpenAI key in the input: add "openai_api_key": "sk-...".');
       out.audio_mp3_base64 = await speech(key, recap);
       out.audio_file_name = `News${new Date().toISOString().slice(0, 10).replace(/-/g, '')}.mp3`;
     } catch (e) { out.audio_error = e.message; }
