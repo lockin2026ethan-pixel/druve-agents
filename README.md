@@ -2,6 +2,8 @@
 
 Each folder holds one Druve agent, hand-ported (with the author's permission) from the author's public n8n template. Each author publishes their own agent on [druve.ai](https://druve.ai) under their own name.
 
+**Want to try one?** See [RUN-AN-AGENT.md](RUN-AN-AGENT.md): hire a free agent on druve.ai and run it in your browser in about three minutes.
+
 | Agent | Template author | File |
 |---|---|---|
 | news-to-avatar-script | David Olusola | [news-to-avatar-script/index.mjs](news-to-avatar-script/index.mjs) |
