@@ -23,3 +23,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | dental-denial-appeal-drafter | Swapnil Mandloi (Swapnil AI Labs) | [dental-denial-appeal-drafter/index.mjs](dental-denial-appeal-drafter/index.mjs) |
 | gmail-weekly-recap-audio | Alberto Idrio | [gmail-weekly-recap-audio/index.mjs](gmail-weekly-recap-audio/index.mjs) |
 | slr-paper-review | Jannik Hiller | [slr-paper-review/index.mjs](slr-paper-review/index.mjs) |
+| job-application-tracker | Diego Parrás | [job-application-tracker/index.mjs](job-application-tracker/index.mjs) |
