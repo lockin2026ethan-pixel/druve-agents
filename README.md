@@ -24,3 +24,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | gmail-weekly-recap-audio | Alberto Idrio | [gmail-weekly-recap-audio/index.mjs](gmail-weekly-recap-audio/index.mjs) |
 | slr-paper-review | Jannik Hiller | [slr-paper-review/index.mjs](slr-paper-review/index.mjs) |
 | job-application-tracker | Diego Parrás | [job-application-tracker/index.mjs](job-application-tracker/index.mjs) |
+| article-to-social-posts | Bhavy Shekhaliya | [article-to-social-posts/index.mjs](article-to-social-posts/index.mjs) |
