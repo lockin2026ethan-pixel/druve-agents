@@ -40,3 +40,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | instagram-profile-analyzer | Pawan Kumar | [instagram-profile-analyzer/index.mjs](instagram-profile-analyzer/index.mjs) |
 | voice-assistant-email-calendar | Jyothish S L | [voice-assistant-email-calendar/index.mjs](voice-assistant-email-calendar/index.mjs) |
 | knowledge-ladder | Sridevi Edupuganti | [knowledge-ladder/index.mjs](knowledge-ladder/index.mjs) |
+| startup-idea-validator | Kanishka Shrivastava | [startup-idea-validator/index.mjs](startup-idea-validator/index.mjs) |
