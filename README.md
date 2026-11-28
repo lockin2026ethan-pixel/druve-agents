@@ -36,3 +36,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | telegram-ecommerce-support | Nirav Gajera | [telegram-ecommerce-support/index.mjs](telegram-ecommerce-support/index.mjs) |
 | ux-feedback-tagger | parhumm | [ux-feedback-tagger/index.mjs](ux-feedback-tagger/index.mjs) |
 | tech-news-linkedin-post | Abdullah Al Shishani | [tech-news-linkedin-post/index.mjs](tech-news-linkedin-post/index.mjs) |
+| notion-prompt-hub | Yahor Dubrouski | [notion-prompt-hub/index.mjs](notion-prompt-hub/index.mjs) |
