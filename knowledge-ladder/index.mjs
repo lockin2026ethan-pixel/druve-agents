@@ -2,7 +2,7 @@
 // "Generate 5-level AI explanations for different audiences from Telegram to
 // Google Docs with GPT-4.1-mini" by Sridevi Edupuganti
 // (https://n8n.io/workflows/12299).
-// Draft for Sridevi to check. Listed on Druve only by Sridevi, under her own name.
+// Draft for Sridevi to check. Listed on Druve only by Sridevi, under Sridevi's own name.
 //
 // What it keeps, unchanged: all five agents, each with its system message and
 // user text word for word (5-year-old story mode, teenager, graduate, PhD

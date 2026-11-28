@@ -1,7 +1,7 @@
 // Startup Idea Validator: a Druve agent ported by hand from the n8n template
 // "Validate startup ideas with Google Gemini, Groq, and Gmail" by Kanishka
 // Shrivastava (https://n8n.io/workflows/16513).
-// Draft for Kanishka to check. Listed on Druve only by Kanishka, under his own name.
+// Draft for Kanishka to check. Listed on Druve only by Kanishka, under Kanishka's own name.
 //
 // What it keeps, unchanged: the form's three fields (Startup Idea, Industry,
 // Target Audience), the "SWOT Analysis Generator" prompt word for word, the
