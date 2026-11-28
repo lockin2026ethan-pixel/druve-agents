@@ -25,3 +25,5 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | slr-paper-review | Jannik Hiller | [slr-paper-review/index.mjs](slr-paper-review/index.mjs) |
 | job-application-tracker | Diego Parrás | [job-application-tracker/index.mjs](job-application-tracker/index.mjs) |
 | article-to-social-posts | Bhavy Shekhaliya | [article-to-social-posts/index.mjs](article-to-social-posts/index.mjs) |
+| slack-thread-to-jira | Salim Brahmi | [slack-thread-to-jira/index.mjs](slack-thread-to-jira/index.mjs) |
+| job-application-auto-reply | Md Abdullah Al Noman | [job-application-auto-reply/index.mjs](job-application-auto-reply/index.mjs) |
