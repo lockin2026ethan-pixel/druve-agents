@@ -31,3 +31,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | daily-calendar-sms-summary | Anne | [daily-calendar-sms-summary/index.mjs](daily-calendar-sms-summary/index.mjs) |
 | breaking-news-ai-scoring | Devjothi Dutta | [breaking-news-ai-scoring/index.mjs](breaking-news-ai-scoring/index.mjs) |
 | news-to-mindful-instagram-post | Prakhyat Sapkale | [news-to-mindful-instagram-post/index.mjs](news-to-mindful-instagram-post/index.mjs) |
+| gmail-support-agent | Muhammad Ali | [gmail-support-agent/index.mjs](gmail-support-agent/index.mjs) |
