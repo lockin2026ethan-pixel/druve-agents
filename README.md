@@ -27,3 +27,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | article-to-social-posts | Bhavy Shekhaliya | [article-to-social-posts/index.mjs](article-to-social-posts/index.mjs) |
 | slack-thread-to-jira | Salim Brahmi | [slack-thread-to-jira/index.mjs](slack-thread-to-jira/index.mjs) |
 | job-application-auto-reply | Md Abdullah Al Noman | [job-application-auto-reply/index.mjs](job-application-auto-reply/index.mjs) |
+| workflow-error-diagnostics | Chandan Singh | [workflow-error-diagnostics/index.mjs](workflow-error-diagnostics/index.mjs) |
