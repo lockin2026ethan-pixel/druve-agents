@@ -34,3 +34,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | gmail-support-agent | Muhammad Ali | [gmail-support-agent/index.mjs](gmail-support-agent/index.mjs) |
 | pii-safe-ai-chat | Charles Oh | [pii-safe-ai-chat/index.mjs](pii-safe-ai-chat/index.mjs) |
 | telegram-ecommerce-support | Nirav Gajera | [telegram-ecommerce-support/index.mjs](telegram-ecommerce-support/index.mjs) |
+| ux-feedback-tagger | parhumm | [ux-feedback-tagger/index.mjs](ux-feedback-tagger/index.mjs) |
