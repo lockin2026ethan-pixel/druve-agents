@@ -37,3 +37,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | ux-feedback-tagger | parhumm | [ux-feedback-tagger/index.mjs](ux-feedback-tagger/index.mjs) |
 | tech-news-linkedin-post | Abdullah Al Shishani | [tech-news-linkedin-post/index.mjs](tech-news-linkedin-post/index.mjs) |
 | notion-prompt-hub | Yahor Dubrouski | [notion-prompt-hub/index.mjs](notion-prompt-hub/index.mjs) |
+| instagram-profile-analyzer | Pawan Kumar | [instagram-profile-analyzer/index.mjs](instagram-profile-analyzer/index.mjs) |
