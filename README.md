@@ -29,3 +29,4 @@ Each folder holds one Druve agent, hand-ported (with the author's permission) fr
 | job-application-auto-reply | Md Abdullah Al Noman | [job-application-auto-reply/index.mjs](job-application-auto-reply/index.mjs) |
 | workflow-error-diagnostics | Chandan Singh | [workflow-error-diagnostics/index.mjs](workflow-error-diagnostics/index.mjs) |
 | daily-calendar-sms-summary | Anne | [daily-calendar-sms-summary/index.mjs](daily-calendar-sms-summary/index.mjs) |
+| breaking-news-ai-scoring | Devjothi Dutta | [breaking-news-ai-scoring/index.mjs](breaking-news-ai-scoring/index.mjs) |
